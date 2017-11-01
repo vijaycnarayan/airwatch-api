@@ -1,0 +1,32 @@
+swagger: '2.0'
+definitions:
+  BaseExceptionModel:
+    type: object
+    description: Represents the exception object thrown from API
+    x-ignore: true    
+    properties:
+      errorCode:
+        description: Application error code specific to operation
+        type: integer
+        format: int32
+      message:
+        description: Friendly error message (any serializable type)
+        type: object
+      activityId:
+        description: TransactionId of the request in Guid format
+        type: string
+        format: uuid
+
+  BaseModel:
+    type: object
+    description: Parent class of all view models used in API
+    x-ignore: true
+    properties:
+      id:
+        description: Identifier of the resource in integer format
+        type: integer
+        format: int32
+      uuid:
+        description: Identifier of the resource in Guid format
+        type: string
+        format: uuid
