@@ -1,4 +1,11 @@
 swagger: '2.0'
+info:
+  description: >-
+    This contains common definitions required for creating Swagger API specification file.
+  version: '1'
+  title: Common definitions for Swagger API specification
+  license:
+    name: 'Copyright © 2017 VMware, Inc. All Rights Reserved.'
 definitions:
   BaseExceptionModel:
     type: object
